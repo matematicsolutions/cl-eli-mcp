@@ -1,5 +1,7 @@
 # cl-eli-mcp
 
+<!-- mcp-name: io.github.matematicsolutions/cl-eli-mcp -->
+
 MCP server for Chilean legislation via the BCN (Biblioteca del Congreso
 Nacional de Chile) Linked Open Data SPARQL endpoint. Searches and fetches
 laws, decrees, and resolutions by their persistent resource URI.
