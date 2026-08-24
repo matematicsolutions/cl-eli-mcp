@@ -36,6 +36,7 @@ This MCP server exposes the BCN (Biblioteca del Congreso Nacional de Chile) Link
 
 ## Hard constraints
 
+- **Do not answer past the edge of this corpus** - when a search comes back empty, or the question touches material this connector does not carry, call `cl_coverage` and relay what it says is missing. Absence here is not absence in the law.
 - **The resource URI IS the citation contract** - `lex_uri` and `source_url` are the same BCN URI; dereferencing it (a plain GET, following redirects) resolves to a human-readable page.
 - **No full-text law content** - this connector returns metadata (title, number, dates, issuing body), not the operative articles of the law. For that, follow `source_url`.
 - **Every response has `human_readable_citation`** - e.g. "Ley 18290, de 1984-01-23". Cite it plus `source_url`.
