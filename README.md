@@ -20,6 +20,7 @@ issuing body) - not the operative text of the law. Following `source_url`
 |---|---|
 | `cl_search_norms` | Full-text search over norm titles |
 | `cl_get_norm` | Full detail for one norm by its BCN resource URI |
+| `cl_coverage` | Declare what this connector covers, when each family was captured, and - explicitly - what it does NOT cover. Every gap carries a fallback. |
 
 Every response carries `lex_uri` and `source_url` (both the BCN resource
 URI) and `human_readable_citation` (e.g. `"Ley 18290, de 1984-01-23"`).
